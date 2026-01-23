@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  printer-api:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./printers.json:/app/printers.json:ro
+    environment:
+      - API_TOKEN=troque_por_uma_token_segura
+    restart: unless-stopped

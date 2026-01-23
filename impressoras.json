@@ -1,0 +1,14 @@
+[
+  {"nome":"PAF","ip":"172.22.192.34","sector":"Críticos","tipo":"Lexmark MS812","urgente":true,"online":true},
+  {"nome":"ADM 01","ip":"172.22.192.32","sector":"Administração","tipo":"Lexmark MS812","online":true},
+  {"nome":"AMBULATÓRIO","ip":"172.22.192.47","sector":"Operação","tipo":"Lexmark MS812","online":false},
+  {"nome":"QUALIDADE","ip":"172.22.192.45","sector":"Operação","tipo":"Lexmark MS812","online":true},
+  {"nome":"PROCESSO","ip":"172.22.192.37","sector":"Operação","tipo":"Lexmark MS812","online":true},
+  {"nome":"ADM2","ip":"172.22.192.39","sector":"Administração","tipo":"Lexmark MS812","urgente":true,"online":true},
+  {"nome":"ALMOX","ip":"172.22.192.35","sector":"Administração","tipo":"Lexmark MS812","online":false},
+  {"nome":"PAGGING","ip":"172.22.192.40","sector":"Administração","tipo":"Lexmark MS812","online":true},
+  {"nome":"PROJETO","ip":"172.22.192.38","sector":"Administração","tipo":"Lexmark MS812","online":true},
+  {"nome":"MEIO AMBIENTE","ip":"172.22.192.48","sector":"Administração","tipo":"Lexmark MS812","online":false},
+  {"nome":"LOG","ip":"172.22.192.46","sector":"Operação","tipo":"Lexmark MS812","online":true},
+  {"nome":"FATURAMENTO","ip":"172.22.126.40","sector":"Críticos","tipo":"Lexmark MS812","online":true}
+]

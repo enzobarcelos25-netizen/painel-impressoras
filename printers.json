@@ -1,0 +1,14 @@
+[
+  {"nome":"PAF","ip":"172.22.192.34","modelo":"Lexmark MS812","snmpCommunity":"public"},
+  {"nome":"ADM 01","ip":"172.22.192.32","modelo":"Lexmark MS812","snmpCommunity":"public"},
+  {"nome":"AMBULATÓRIO","ip":"172.22.192.47","modelo":"Lexmark MS812","snmpCommunity":"public"},
+  {"nome":"QUALIDADE","ip":"172.22.192.45","modelo":"Lexmark MS812","snmpCommunity":"public"},
+  {"nome":"PROCESSO","ip":"172.22.192.37","modelo":"Lexmark MS812","snmpCommunity":"public"},
+  {"nome":"ADM2","ip":"172.22.192.39","modelo":"Lexmark MS812","snmpCommunity":"public"},
+  {"nome":"ALMOX","ip":"172.22.192.35","modelo":"Lexmark MS812","snmpCommunity":"public"},
+  {"nome":"PAGGING","ip":"172.22.192.40","modelo":"Lexmark MS812","snmpCommunity":"public"},
+  {"nome":"PROJETO","ip":"172.22.192.38","modelo":"Lexmark MS812","snmpCommunity":"public"},
+  {"nome":"MEIO AMBIENTE","ip":"172.22.192.48","modelo":"Lexmark MS812","snmpCommunity":"public"},
+  {"nome":"LOG","ip":"172.22.192.46","modelo":"Lexmark MS812","snmpCommunity":"public"},
+  {"nome":"FATURAMENTO","ip":"172.22.126.40","modelo":"Lexmark MS812","snmpCommunity":"public"}
+]

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Painel Profissional de Impressoras</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="logo">TI • Impressoras</div>
+    <nav>
+      <button class="nav-btn active" data-view="panel">Impressoras</button>
+      <button class="nav-btn" data-view="config">Configurações</button>
+      <button class="nav-btn" data-view="logs">Logs</button>
+    </nav>
+    <div class="sidebar-foot">
+      <small>Versão local • Sem backend</small>
+    </div>
+  </aside>
+
+  <header class="topbar">
+    <div class="top-left">
+      <h1 id="pageTitle">Impressoras</h1>
+      <div class="controls">
+        <input id="search" type="search" placeholder="Buscar por nome, IP ou setor">
+        <select id="filter">
+          <option value="all">Todos</option>
+          <option value="online">Online</option>
+          <option value="offline">Offline</option>
+          <option value="urgent">Urgente</option>
+        </select>
+        <button id="refreshBtn">🔄 Atualizar</button>
+      </div>
+    </div>
+    <div class="top-right">
+      <button id="addQuick">➕ Nova</button>
+    </div>
+  </header>
+
+  <main class="main">
+    <!-- VIEW: IMPRESSORAS -->
+    <section id="view-panel" class="view active">
+      <div id="alertBox" class="alert hidden"></div>
+      <div id="summary" class="summary"></div>
+      <div id="grid" class="grid"></div>
+    </section>
+
+    <!-- VIEW: CONFIG -->
+    <section id="view-config" class="view">
+      <h2>Configurações — Impressoras</h2>
+      <div class="config-wrap">
+        <form id="formAdd">
+          <input name="nome" placeholder="Nome (e.g. PAF)" required />
+          <input name="ip" placeholder="IP (e.g. 172.22.192.34)" required />
+          <input name="sector" placeholder="Setor (e.g. Produção)" />
+          <input name="tipo" placeholder="Tipo/Modelo (opcional)" />
+          <label><input name="urgent" type="checkbox" /> Urgente (toner)</label>
+          <div class="form-actions">
+            <button type="submit">Salvar</button>
+            <button type="button" id="resetForm">Limpar</button>
+          </div>
+        </form>
+
+        <div class="list-config">
+          <h3>Lista atual</h3>
+          <ul id="configList" class="config-list"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIEW: LOGS -->
+    <section id="view-logs" class="view">
+      <h2>Logs</h2>
+      <div class="logs-actions">
+        <button id="clearLogs">Limpar logs</button>
+        <button id="exportLogs">Exportar CSV</button>
+      </div>
+      <div id="logList" class="log-list"></div>
+    </section>
+  </main>
+
+  <div id="toast" class="toast hidden"></div>
+
+<script src="app.js"></script>
+</body>
+</html>

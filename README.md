@@ -1,23 +1,38 @@
 # Painel de Impressoras
 
-Painel web para visualizar, cadastrar e acompanhar impressoras de um ambiente de TI.
+Painel web para acompanhamento de impressoras em ambiente de TI, com cadastro, filtros, logs e base para verificacao de status.
 
-O projeto mistura uma interface offline com `localStorage`, arquivos JSON de impressoras e um back-end Node/Express para consulta de status por ping.
+<p align="center">
+  <img src="https://img.shields.io/badge/JavaScript-111?style=for-the-badge&logo=javascript" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/Node.js-111?style=for-the-badge&logo=node.js" alt="Node.js" />
+  <img src="https://img.shields.io/badge/Express-111?style=for-the-badge&logo=express" alt="Express" />
+</p>
 
-## Objetivo
+## Visao geral
 
-Criar uma ferramenta simples para suporte tecnico acompanhar impressoras, marcar prioridades e registrar acoes do dia a dia.
+Este projeto simula uma ferramenta interna para suporte tecnico acompanhar impressoras, identificar prioridades, registrar acoes e consultar status.
+
+A interface funciona offline com `localStorage` e dados JSON. O back-end em Node/Express serve como base para verificacoes reais via ping.
+
+## Destaques
+
+- Projeto alinhado a rotina real de suporte e infraestrutura.
+- Interface simples para operacao diaria.
+- Logs de eventos e exportacao CSV.
+- Separacao entre painel front-end e back-end de status.
+- Base pronta para evoluir para autenticacao e monitoramento real.
 
 ## Funcionalidades
 
 - Listagem de impressoras em cards.
-- Busca e filtro por status.
-- Marcacao de impressoras urgentes.
+- Busca por nome, IP ou setor.
+- Filtros por online, offline e urgente.
 - Cadastro, edicao e remocao de impressoras.
-- Persistencia local com `localStorage`.
-- Logs de acoes e verificacoes.
+- Marcacao de prioridade/urgencia.
+- Persistencia no navegador com `localStorage`.
+- Historico de logs.
 - Exportacao de logs em CSV.
-- Back-end Express com rota `/status` para verificar impressoras via ping.
+- Endpoint `/status` no back-end para checagem por ping.
 
 ## Stack
 
@@ -43,34 +58,35 @@ painel-impressoras/
   vercel.json
 ```
 
-## Como rodar a interface
+## Como rodar
 
-Abra o arquivo `index.html` no navegador.
+Interface:
 
-## Como rodar o back-end
+```txt
+Abra index.html no navegador
+```
+
+Back-end:
 
 ```bash
 npm install
 node server.js
 ```
 
-Endpoint local:
+Endpoint:
 
 ```txt
 http://localhost:3000/status
 ```
 
-## Observacoes
-
-O front-end atual tambem simula verificacoes de status para evitar problemas de CORS no navegador. O back-end fica disponivel como base para evoluir para checagens reais em rede local.
-
 ## Proximos passos
 
-- Integrar a interface diretamente ao endpoint `/status`.
-- Padronizar um unico arquivo de impressoras.
-- Proteger dados sensiveis de rede antes de publicar.
-- Adicionar autenticacao para uso interno.
+- Conectar o front-end diretamente ao endpoint `/status`.
+- Padronizar a fonte de dados em um unico arquivo ou banco.
+- Remover dados sensiveis antes de uso publico.
+- Adicionar login para uso interno.
+- Criar dashboard historico de disponibilidade.
 
 ## Status
 
-Projeto de TI corporativa em evolucao.
+Projeto de TI corporativa em evolucao, pensado como ferramenta interna de suporte.
